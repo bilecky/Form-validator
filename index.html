@@ -25,7 +25,8 @@
                 <tr>
                 <tr>
                     <td align="right">numeeer tel:</td>
-                    <td><input type="text" maxlength="10" placeholder="wpisz numer tel" title="Please enter exactly 10 digits" id='t7' class="tb" type="text">
+                    <td><input type="text" maxlength="10" placeholder="wpisz numer tel"
+                            title="Please enter exactly 10 digits" id='t7' class="tb" type="text">
                     </td>
                 </tr>
                 <tr>
@@ -44,9 +45,11 @@
                 <tr>
 
                     <td align="right">kraj :</td>
-                    <td>    
-        
-                        <select id="country" name="country" class="form-control">
+                    <td>
+
+                        <select id="country" name="country" value='' class="form-control">
+                            <option value="" disabled selected>Wybierz kraj</option>
+
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -97,7 +100,8 @@
                             <option value="Colombia">Colombia</option>
                             <option value="Comoros">Comoros</option>
                             <option value="Congo">Congo</option>
-                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The
+                            </option>
                             <option value="Cook Islands">Cook Islands</option>
                             <option value="Costa Rica">Costa Rica</option>
                             <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -162,7 +166,8 @@
                             <option value="Kazakhstan">Kazakhstan</option>
                             <option value="Kenya">Kenya</option>
                             <option value="Kiribati">Kiribati</option>
-                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic
+                                of</option>
                             <option value="Korea, Republic of">Korea, Republic of</option>
                             <option value="Kuwait">Kuwait</option>
                             <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -176,7 +181,8 @@
                             <option value="Lithuania">Lithuania</option>
                             <option value="Luxembourg">Luxembourg</option>
                             <option value="Macao">Macao</option>
-                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                                Republic of</option>
                             <option value="Madagascar">Madagascar</option>
                             <option value="Malawi">Malawi</option>
                             <option value="Malaysia">Malaysia</option>
@@ -249,7 +255,8 @@
                             <option value="Solomon Islands">Solomon Islands</option>
                             <option value="Somalia">Somalia</option>
                             <option value="South Africa">South Africa</option>
-                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                Sandwich Islands</option>
                             <option value="Spain">Spain</option>
                             <option value="Sri Lanka">Sri Lanka</option>
                             <option value="Sudan">Sudan</option>
@@ -278,7 +285,8 @@
                             <option value="United Arab Emirates">United Arab Emirates</option>
                             <option value="United Kingdom">United Kingdom</option>
                             <option value="United States">United States</option>
-                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                            </option>
                             <option value="Uruguay">Uruguay</option>
                             <option value="Uzbekistan">Uzbekistan</option>
                             <option value="Vanuatu">Vanuatu</option>
@@ -296,19 +304,24 @@
                 <td>
                     <tr>
 
-                        <td align="right">gender :</td>
+                        <td align="right">Płeć :</td>
                         <td><select id="gender">
-                                <option value="male">male</option>
-                                <option value="female">female</option>
-                                <option value="others">others</option>
+                                <option value="" disabled selected>Wybierz płeć</option>
+
+                                <option value="male">Mezczyzna</option>
+                                <option value="female">Kobieta</option>
+                                <option value="others">Inna</option>
                             </select>
                     </tr>
-                    <td>
+                <td>
                     <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
                     <input type="submit" value="Create Account" class="btn" onclick="registration()" />
                 </td>
                 </tr>
             </table>
+        </div>
+        <div class="h-tag">
+            <h2 style="text-align: center;">Paweł Bilski</h2>
         </div>
         <!-- create account box ending here.. -->
     </div>

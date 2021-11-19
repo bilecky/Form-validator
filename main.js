@@ -1,32 +1,32 @@
 function registration() {
-	var name = document.getElementById('t1').value
-	var email = document.getElementById('t2').value
-	var uname = document.getElementById('t3').value
-	var pwd = document.getElementById('t4').value
-	var cpwd = document.getElementById('t5').value
-	var gender = document.getElementById('gender').value
-	var phone = document.getElementById('t7').value
+	let name = document.getElementById('t1').value
+	let email = document.getElementById('t2').value
+	let uname = document.getElementById('t3').value
+	let pwd = document.getElementById('t4').value
+	let cpwd = document.getElementById('t5').value
+	let gender = document.getElementById('gender').value
+	let phone = document.getElementById('t7').value
 
 
 
 	//email id expression code
-	var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
-	var letters = /^[A-Za-z]+$/
-	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
-var pNumb = /[0-9]{9}/
+	let pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
+	let letters = /^[A-Za-z]+$/
+	let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+let pNumb = /[0-9]{9}/
 
 
 	if (name == '') {
-		alert('Please enter your name')
+		alert('Podaj imię')
 	} else if (!letters.test(name)) {
-		alert('Name field required only alphabet characters')
+		alert('Imię może składać się tylko z liter')
 	} else if (email == '') {
-		alert('Please enter your user email id')
+		alert('Podaj adres e-mail')
 	} else if (!filter.test(email)) {
-		alert('Invalid email')
+		alert('Nieprawidłowy adres e-mail')
 	} 
 	else if (!pNumb.test(phone)) {
-		alert('Invalid xxxxxxx')
+		alert('Nieprawidłowy numer telefonu')
 	} 	
 	
 	else if (uname == '') {
@@ -52,6 +52,7 @@ var pNumb = /[0-9]{9}/
 		alert('Thank You for Login & You are Redirecting to Campuslife Website')
 		// Redirecting to other page or webste code.
 		window.location.reload()
+		
 	}
 }
 function clearFunc() {
