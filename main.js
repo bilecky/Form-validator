@@ -25,13 +25,13 @@ function registration() {
 	} else if (!pNumb.test(phone)) {
 		alert('Nieprawidłowy numer telefonu')
 	} else if (uname == '') {
-		alert('Please enter the user name.')
+		alert('Proszę wpisać nick')
 	} else if (!letters.test(uname)) {
-		alert('User name field required only alphabet characters')
+		alert('Nick może zawierać tylko litery')
 	} else if (pwd == '') {
-		alert('Please enter Password')
+		alert('Wpisz hasło')
 	} else if (cpwd == '') {
-		alert('Enter Confirm Password')
+		alert('Potwierdź wpisane hasło')
 	} else if (!pwd_expression.test(pwd)) {
 		alert('Hasło powinno składać się z conajmniej jednej małej i dużej litery, cyfry oraz znaku specjalnego')
 	} else if (pwd != cpwd) {
